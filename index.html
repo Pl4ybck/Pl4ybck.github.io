@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ábrela cuando</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="bienvenida" class="card">
+      <h1>Hola amor</h1>
+      <p>
+        sea dia tarde o noche el momento en el que estés leyendo esto quiero que sepas que en todo momento del dia te pienso, ocupas la casa de mi corazon, y la haz adornado de cosas bonitas cuando era un lugar en abandono, llenaste mi mente de pensamientos positivos cuando al autodestruccion me consumia, gracias por transmitirme tus buenas vibras y compartirme tu manera de ver el mundo, que hasta repito tus frases y algunas actitudes jajajsajs, te amu mucho muchote como no tienes idea, puede que aveces no lo demuestre como siempre, sorry for that, lo que más quiero es que te sientas amada de la manera que quieres, se que ha habido una digamos sequia de detallitos, pero aqui te entrego este, me ha tomado algun tiempo, pero fue hecho con paciencia, pelas con la computadora pero sobre todo mucho mucho mucho amor
+      </p>
+      <p>
+        cada una de esas cartas esta hecha dependiendo de tu mood, capaz no sean muchas, pero, hice las que pude y que me permitia, cuando estes feliz, o triste, con ganas de una sonrisa, o hasta cuando sientas algo raro con nosotros, como una pequeña motivacion en ciertos momentos cuando no pueda estar contigo
+      </p>
+      <p class="firma">Att. Tu negrito</p>
+      <button onclick="mostrarCartas()">Ver las cartas</button>
+    </div>
+    <div id="cartas" class="hidden">
+      <h2>Ábrela cuando...</h2>
+      <div class="grid" id="cards-container"></div>
+    </div>
+    <div id="modal" class="modal hidden" onclick="cerrarModal(event)">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <h3 id="modal-title"></h3>
+        <p id="modal-body"></p>
+        <button onclick="cerrarModal()">Cerrar</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
